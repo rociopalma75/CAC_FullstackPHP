@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post"> <!--action="ingreso.php" o action="controlador.php"-->
+        
+        <!-- Inputs y Labels-->
+
+<!--         <label for="nombre">Nombre:</label>
+        <input class="estiloInput" id="nombre" name="nombre" type="text" placeholder="Escriba su nombre" value="Rocio">
+        <br>
+        <label for="apellido">Apellido:</label> 
+        <input class="estiloInput" id="apellido" name="apellido" type="text" maxlength="20" minlength="5">
+        <br>
+        <label for="direccion">Dirección:</label> 
+        <input class="estiloInput" id="direccion" name="direccion" type="text" required>
+        <br>
+        <label for="altura">Altura:</label> 
+        <input class="estiloInput" id="altura" name="altura" type="number" max="1000" min="1">
+        <br>
+        <label for="password">Password:</label> 
+        <input pattern="" class="estiloInput" id="password" name="password" type="password">
+        <br>
+        <label for="mail">E-mail:</label> 
+        <input class="estiloInput" id="mail" name="mail" type="email" readonly value="rocio@gmail.com" disabled> -->
+
+        <h1>Formulario</h1>
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input class="estiloInput" id="nombre" name="nombre" type="text" placeholder="Escriba su nombre" value="Rocio"></td>
+            </tr>
+            <tr>
+                <td><label for="apellido">Apellido:</label></td>
+                <td><input class="estiloInput" id="apellido" name="apellido" type="text" maxlength="20" minlength="5"></td>
+            </tr>
+            <tr>
+                <td><label for="direccion">Dirección:</label></td>
+                <td><input class="estiloInput" id="direccion" name="direccion" type="text" required></td>
+            </tr>
+            <tr>
+                <td><label for="altura">Altura:</label></td>
+                <td><input class="estiloInput" id="altura" name="altura" type="number" max="1000" min="1"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input pattern="" class="estiloInput" id="password" name="password" type="password"></td>
+            </tr>
+            <tr>
+                <td><label for="mail">E-mail:</label></td>
+                <td><input class="estiloInput" id="mail" name="mail" type="email" readonly value="rocio@gmail.com" disabled></td>
+            </tr>
+        </table>
+
+        <hr>
+        <label for="fecha">Fecha:</label>
+        <input name="fecha" id="fecha" type="date">
+        <hr>
+        <label for="archivo">Archivo: </label>
+        <input id="archivo" name="archivo" type="file">
+        <hr>
+        <input type="range" name="" id="">
+
+        <h2>Checkbox</h2>
+        <input type="checkbox" name="marca" value="1">Fiat
+        <input type="checkbox" name="marca" value="2">Ford
+        <input type="checkbox" name="marca" value="3">Renault
+
+        <h2>Radio button</h2>
+        <input type="radio" name="marca" value="1">Fiat
+        <input type="radio" name="marca" value="2">Ford
+        <input type="radio" name="marca" value="3">Renault
+        <hr>
+
+        <fieldset><!--Es un agrupador de inputs a diferencia del for, esta es solo para la vista-->
+            <legend>Datos de la dirección</legend>
+            <label for="direccion">Dirección:</label> 
+            <input class="estiloInput" id="direccion" name="direccion" type="text" required>
+            <br>
+            <label for="altura">Altura:</label> 
+            <input class="estiloInput" id="altura" name="altura" type="number" max="1000" min="1">
+        </fieldset>
+        <hr>
+        
+        <label for="comentario">Comentario: </label>
+        <textarea name="comentario" id="comentario" cols="40" rows="2"></textarea>
+        
+        <h3>Provincias</h3>
+        <select> <!--select multiple (tmb puede ser)-->
+            <option value="1">Cordoba</option>
+            <option value="2">Mendoza</option>
+            <option value="3">Salta</option>
+        </select>
+
+        <h3>Autos</h3>
+        <select name="" id="">
+            <optgroup label="Nacionales">
+                <option value="">Ford</option>
+                <option value="">Fiat</option>
+            </optgroup>
+            <optgroup label="Importados">
+                <option value="">BMW</option>
+                <option value="">Mercedes</option>
+            </optgroup>
+        </select>
+
+        <input type="submit" value="Enviar">
+
+        <!--Los input los puedo ordenar en un table-->
+        <table>
+            <tr><td></td><td></td></tr>
+        </table>
+
+
+        <!--Tiene que tener un submit-->
+    </form>
+</body>
+</html>
