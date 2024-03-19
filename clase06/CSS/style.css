@@ -1,0 +1,34 @@
+/* Selector universal */
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: gray;
+}
+/* Selectores de etiqueta */
+h1{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+div{
+    background-color: red;
+    width: 200px;
+    height: 100px;
+}
+
+/* Selector de ID */
+#textoAzul{
+    color: blue;
+}
+
+/* Selector clase */
+.textoGeneral{
+    color: brown;
+}
+
+.textoGeneralTamaño{
+    font-size: 20px;
+}
